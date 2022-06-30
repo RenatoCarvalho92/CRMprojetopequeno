@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TeraAgenda</title>
+</head>
+
+<body>    
+    <header>        
+        <nav>
+            <h1><a href="index.html">Tera Agenda</a></h1>                
+        </nav>
+    </header>
+    
+    <main>
+
+        <div id="mainEntrar">
+            <h2>Acesse a Tera Agenda</h2>        
+
+        <form action="agendamento.html" id="formEntrar">
+            <div>
+                <label for="login">Login</label>
+                <input name="login" type="email" id="login" placeholder="Digite seu e-mail de cadastro" required>
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input name="senha" type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <label>
+                <input type="checkbox" checked="cheked">Lembrar-me
+            </label>
+
+            <a href="agendamento.html"></a>
+            <button type="submit" class="btnAcesso">Entrar</button>
+            
+        </form>
+        <form action= "cadastre.html">
+            <div>
+            <h3>Não tem acesso ainda?</h3>
+            <button type="submit" class="btnAcesso">Cadastre-se</button>
+            </div>            
+        </form>
+        </div>
+    </main>
+    
+    <footer>
+        <h3>Sigam-nos nas Redes sociais</h3>
+        <div class="redes">            
+            <a href="https://pt-br.facebook.com/"><img src="assets/logo_facebook.png" alt="Simbolo do facebook de forma redonda em verde com a letra F no meio de cor branca."></a>
+            <a href="https://www.instagram.com/"><img src="assets/logo_instagram.png" alt="Simbolo do Instagram em forma redonda de cor verde com um camera desenhada em contorno branco de um ponto de vista onde olhamos diretamente para lente da camera."></a>
+            <a href="https://www.youtube.com/"><img src="assets/logo_youtube.png" alt="Simbolo do youtube em forma redonda de cor verde , contendo no meio um triangulo rotacionado dentro de um retangulo com pontas levemente arredondadas."></a>
+        </div>
+
+        <div class="cabecalho">
+            <p id="faleConosco"><b>Fale conosco</b></p>
+            <div>
+                <img src="assets/logo_gmail.png" alt="Simbolo do Gmail envolope de carta retangular na cor verde.">        
+            </div>
+            <div>
+            <a href="#">nayara.dcf@gmail.com</a>
+            </div>
+            <div>
+            <a href="#">renatogamedesigner@gmail.com</a>
+            </div>
+            
+            <p id="cComercial">© 2022 Tera Agenda Serviços de Tecnologia Ltda.
+            </p>
+            </div>
+        </footer>             
+    
+    <script src="https://unpkg.com/imask"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>

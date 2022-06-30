@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TeraAgenda</title>
+</head>
+
+<body>
+    <header>        
+        <nav>
+            <h1><a href="index.html">Tera Agenda</a></h1>              
+        </nav>
+    </header>   
+
+    <main>
+
+        <form action="entrar.html" id="formCadastre" onsubmit="return funcConfirmar()">
+            <h2>Cadastre suas informações</h2>
+        <div>
+            <label for="razaoSocial">Razão Social*</label>
+            <input name="razaoSocial" type="text" id="razaoSocial" placeholder="Informe a Razão Social" required>
+        </div>
+
+        <div>
+            <label for="cnpj">CNPJ*</label>
+            <input name="cnpj" type="text" id="cnpj" placeholder="00.000.000/000-00" required>
+        </div>
+
+        <div>
+            <label for="fone">Telefone comercial*</label>
+            <input name="fone" type="tel" id="fone" placeholder="(00) 00000-0000" required>
+        </div>
+       
+        <div>
+            <label for="email">E-mail*</label>
+            <input name="email" type="email" id="email" placeholder="...@email.com" required>
+        </div>
+
+        <div class="local">     
+            <div>
+                <label for="cep">Cep*</label>
+                <input name="cep" type="text" id="cep" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ..." required>
+            </div>
+
+        <div>
+            <label for="logradouro">Endereço*</label>
+            <input name="logradouro" type="text" id="logradouro" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ...">
+        </div>
+
+        <div>
+            <label for="numero">Número*</label>
+            <input name="numero" type="text" id="numero" placeholder="Informe o número" required>
+        </div>
+
+        <div>
+            <label for="blocoSala">Bloco/Sala</label>
+            <input name="blocoSala" type="text" id="blocoSala" placeholder="Número do bloco ou sala">
+        </div>
+
+        <div>
+            <label for="bairro">Bairro*</label>
+            <input name="bairro" type="text" id="bairro" placeholder="Informe o bairro">
+        </div>
+
+        <div>
+            <label for="localidade">Cidade*</label>
+            <input name="localidade" type="text" id="localidade" placeholder="Informe a cidade">
+        </div>
+     
+        <div>
+            <label for="uf">UF*</label>
+            <input name="uf" type="text" id="uf" placeholder="Informe a UF">                
+        </div>    
+        </div>
+               
+        <div>
+            <label for="cadastroSenha">Senha*</label>
+            <input name="cadastroSenha" type="password" id="cadastroSenha" placeholder="Informe a senha" required>
+        </div>
+
+        <div>
+            <label for="confirmSenha">Confirme a senha*</label>
+            <input name="confirmSenha" type="password" id="confirmSenha" placeholder="Confirme a senha" required>
+        </div>
+
+        <h3>Responsável pela empresa</h3>
+           
+            <div>
+                <label for="nome">Nome completo*</label>
+                <input name="nome" type="text" id="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div>
+                <label for="fonePessoal">Telefone*</label>
+                <input name="fonePessoal" type="tel" id="fonePessoal" placeholder="(00) 00000-0000" required>
+            </div>
+           
+            <div class="campo">
+                <p>(*) Campo obrigatório</p>                    
+            </div>
+
+            <div>
+                <button type="submit" value="Validar" id="btnEnviar">Enviar</button>
+              </div>
+              </form> 
+                         
+    </main>
+
+<footer>
+    <h3>Sigam-nos nas Redes sociais</h3>
+    <div class="redes">        
+        <a href="https://pt-br.facebook.com/"><img src="assets/logo_facebook.png" alt="Simbolo do facebook de forma redonda em verde com a letra F no meio de cor branca."></a>
+        <a href="https://www.instagram.com/"><img src="assets/logo_instagram.png" alt="Simbolo do Instagram em forma redonda de cor verde com um camera desenhada em contorno branco de um ponto de vista onde olhamos diretamente para lente da camera."></a>
+        <a href="https://www.youtube.com/"><img src="assets/logo_youtube.png" alt="Simbolo do youtube em forma redonda de cor verde , contendo no meio um triangulo rotacionado dentro de um retangulo com pontas levemente arredondadas."></a>
+    </div>
+
+    <div class="cabecalho">
+        <p id="faleConosco"><b>Fale conosco</b></p>
+        <div>
+            <img src="assets/logo_gmail.png" alt="Simbolo do Gmail envolope de carta retangular na cor verde.">        
+        </div>
+        <div>
+        <a href="#">nayara.dcf@gmail.com</a>
+        </div>
+        <div>
+        <a href="#">renatogamedesigner@gmail.com</a>
+        </div>
+        
+        <p id="©">© 2022 Tera Agenda Serviços de Tecnologia Ltda.
+        </p>
+        </div>
+    </footer>         
+    
+    <script src="https://unpkg.com/imask"></script>
+    
+</body>
+
+<script src="app/app.js"></script>
+
+</html>

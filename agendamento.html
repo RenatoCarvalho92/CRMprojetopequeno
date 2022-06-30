@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TeraAgenda</title>
+</head>
+
+<body>    
+    <header>        
+        <nav>
+            <h1><a href="index.html">Tera Agenda</a></h1>
+            <a href="#">Consulte a Agenda</a> 
+        </nav>
+    </header> 
+
+    <main>
+        <h2>Cadastre as informações do seu cliente</h2>
+        <form id="formAgendamento">
+            <label>Nome: </label>
+            <input type="text" placeholder="Nome do cliente" name="nomeDoCliente" id="nomeDoCliente" class="informacaoTexto" > <!-- Index 0 -->
+         
+            <label>Telefone: </label>
+            <input type="text"placeholder="Telefone do cliente" name="telefoneDoCliente" id="telefoneDoCliente" class="informacaoTexto" > <!-- Index 1 -->
+
+            <label>E-mail: </label>
+            <input type="text"placeholder="E-mail do cliente" name="emailDoCliente" id="emailDoCliente" class="informacaoTexto" > 
+            <!-- Index 2 -->
+<!-- -----------------------------------ADICIONADO--INICÍO------------------------------------------------ -->
+            <div>
+                <label for="cep">Cep*</label><!--Adicionar no gitHub-->
+                <input name="cep" type="text" id="Cep" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ..." required>
+            </div>
+
+            <div>
+                <label for="logradouro">Endereço*</label>
+                <input name="logradouro" type="text" id="logradouro" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ...">
+            </div>
+    
+            <div>
+                <label for="numero">Número*</label>
+                <input name="numero" type="text" id="numero" placeholder="Informe o número" required>
+            </div>
+    
+            <div>
+                <label for="blocoSala">Bloco/Sala</label>
+                <input name="blocoSala" type="text" id="blocoSala" placeholder="Número do bloco ou sala">
+            </div>
+    
+            <div>
+                <label for="bairro">Bairro*</label>
+                <input name="bairro" type="text" id="bairro" placeholder="Informe o bairro" required>
+            </div>      
+            
+            <div>
+                <label for="localidade">Cidade*</label>
+                <input name="localidade" type="text" id="localidade" placeholder="Informe a cidade">
+            </div>
+         
+            <div>
+                <label for="uf">UF*</label>
+                <input name="uf" type="text" id="uf" placeholder="Informe a UF">                
+            </div>  
+<!-- -----------------------------------ADICIONADO--INICÍO------------------------------------------------ -->
+            <h3>Serviços</h3>
+            <input type="text" id="caixaTextoInputServico"  placeholder="Adicionar serviço oferecido.">
+            <button type="button" id="botaoAdicionarServico" class="btnAgendamento">Adicionar</button>
+    
+            <label for="listaServicos">Selecione o Serviço:</label>
+            <select id="listaServicos">   
+                <!-- Aqui será adicionado via JAVASCRIPT(DOM) os elementos da dropDown List -->
+            </select>
+
+            <label>Data:</label><input type="text"placeholder="dia/mês/ano" name="dataAgendada" id="dataAgendada" class="informacaoTexto" > <!-- Index 3 -->
+
+            <button type="button" id="botaoAgendarServico" class="btnAgendamento">Agendar Serviço</button>
+        </form>
+        <h2 id="testoAgendado"></h2>
+    </main>
+
+    <footer>
+        <h3>Sigam-nos nas Redes sociais</h3>
+        <div class="redes">            
+            <a href="https://pt-br.facebook.com/"><img src="assets/logo_facebook.png" alt="Simbolo do facebook de forma redonda em verde com a letra F no meio de cor branca."></a>
+            <a href="https://www.instagram.com/"><img src="assets/logo_instagram.png" alt="Simbolo do Instagram em forma redonda de cor verde com um camera desenhada em contorno branco de um ponto de vista onde olhamos diretamente para lente da camera."></a>
+            <a href="https://www.youtube.com/"><img src="assets/logo_youtube.png" alt="Simbolo do youtube em forma redonda de cor verde , contendo no meio um triangulo rotacionado dentro de um retangulo com pontas levemente arredondadas."></a>
+        </div>
+
+        <div class="cabecalho">
+            <p id="faleConosco"><b>Fale conosco</b></p>
+            <div>
+                <img src="assets/logo_gmail.png" alt="Simbolo do Gmail envolope de carta retangular na cor verde.">        
+            </div>
+            <div>
+            <a href="#">nayara.dcf@gmail.com</a>
+            </div>
+            <div>
+            <a href="#">renatogamedesigner@gmail.com</a>
+            </div>
+            
+            <p id="cComercial">© 2022 Tera Agenda Serviços de Tecnologia Ltda.
+            </p>
+            </div>
+        </footer>         
+    
+    <script src="app/app_agenda.js"></script>
+</body>
+</html>
